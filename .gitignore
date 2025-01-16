@@ -1,0 +1,13 @@
+# venv
+/env
+/venv
+/.env
+
+# other
+.DS_Store
+.idea
+
+# javascript
+package-lock.json
+
+.vscode
