@@ -107,4 +107,4 @@ db_config = {
 # for tanggal in tqdm(range(25,31)): 
 #   scrape_detik('Corona', f'{tanggal}/04/2020', f'{tanggal}/04/2020', db_config, f'corona_{tanggal}042020')
 
-scrape_detik('UU Pilkada', '16/08/2024', '05/09/2024', db_config, 'uupilkada')
+scrape_detik('Mario Dandy', '22/02/2023', '02/04/2023', db_config, 'mariodandy')

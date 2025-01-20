@@ -26,22 +26,12 @@ def create_table(table_name, db_config):
 
 def fetch_data(query, db_config):
     try:
-        # Connect to the PostgreSQL database
         conn = psycopg2.connect(**db_config)
-        
-        # Create a cursor object
-        cursor = conn.cursor()
-        
-        # Execute the SQL query
-        cursor.execute(query)
-        
-        # Fetch all rows from the executed query
-        data = cursor.fetchall()
-        
-        # Close the cursor and connection
+        cursor = conn.cursor()       
+        cursor.execute(query)        
+        data = cursor.fetchall()       
         cursor.close()
-        conn.close()
-        
+        conn.close()        
         return data
     
     except Exception as e:
